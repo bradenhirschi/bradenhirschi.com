@@ -3,18 +3,15 @@ import headshot from "../../public/headshot.png";
 
 export default function Home() {
   return (
-    <main className="dark:bg-background-900 dark:text-white">
-      <div className="flex flex-col min-h-screen">
-
-        {/* Empty top section */}
-        <div className="w-full h-[140px] px-12 pt-6"></div>
+    <main>
+      <div className="flex flex-col min-h-screen items-center justify-center">
 
         <div>
           {/* Hero section */}
-          <div className="py-12 px-40 h-full w-full flex flex-col lg:flex-row lg:gap-16">
+          <div className="px-8 md:px-16 lg:px-40 flex flex-col md:flex-row lg:gap-16">
 
             {/* Left side w/ picture */}
-            <div className="relative">
+            <div className="relative m-8">
               <Image
                 src={headshot}
                 alt="headshot"
