@@ -22,7 +22,7 @@ export default function Home() {
               />
             </div>
 
-            {/*Right side w/ words */}
+            {/* Right side w/ words */}
             <div>
               <div className="text-background-500 text-xl">
                 Hello! My name is:
