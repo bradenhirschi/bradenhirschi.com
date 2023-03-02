@@ -1,90 +1,59 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from "next/image";
+import headshot from "../../public/headshot.png";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
+    <main className="dark:bg-background-900 dark:text-white">
+      <div className="flex flex-col min-h-screen">
+
+        {/* Empty top section */}
+        <div className="w-full h-[140px] px-12 pt-6"></div>
+
         <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+          {/* Hero section */}
+          <div className="py-12 px-40 h-full w-full flex flex-col lg:flex-row lg:gap-16">
+
+            {/* Left side w/ picture */}
+            <div className="relative">
+              <Image
+                src={headshot}
+                alt="headshot"
+                className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-background-500" 
+              />
+            </div>
+
+            {/*Right side w/ words */}
+            <div>
+              <div className="text-background-500 text-xl">
+                Hello! My name is:
+              </div>
+              <div className="text-5xl uppercase pb-4">
+                Braden
+                <span className="font-serif text-blue-600">
+                  &nbsp;Hirschi
+                </span>
+              </div>
+              <div className="text-lg">
+                I&apos;m a passionate engineer and creative thinker working as a front-end web developer. I enjoy
+                building websites and web apps using Angular, Node.js, and Express.js. As a software developer, I&apos;ve learned
+                the importance of working with a team, following industry standards and best practices for code
+                organization, and conducting thorough research to solve complex problems. I&apos;m currently redesigning this
+                website as a portfolio, so check back in soon to see some of my work.
+              </div>
+              <div className="flex flex-row pt-6 gap-2 text-lg">
+                <a href="https://www.linkedin.com/in/braden-hirschi/"
+                  className="py-2 px-4 border-2 border-blue-500 rounded-full">
+                  Connect on LinkedIn
+                </a>
+                <a href="https://mobile.twitter.com/bradenhirschi29" className="py-2 px-4 border-2 border-white rounded-full">
+                  Connect on Twitter
+                </a>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   )
