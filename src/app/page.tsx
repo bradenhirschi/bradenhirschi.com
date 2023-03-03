@@ -12,13 +12,13 @@ export default function Home() {
           <Image
             src={headshot}
             alt="headshot"
-            className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-background-700 dark:outline-background-500"
+            className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-zinc-700 dark:outline-zinc-500"
           />
         </div>
 
         {/* Right side w/ words */}
         <div>
-          <div className="text-background-700 dark:text-background-500 text-xl">
+          <div className="text-zinc-700 dark:text-zinc-500 text-xl">
             Hello! My name is:
           </div>
           <div className="text-5xl uppercase pb-4 flex-col sm:flex-row">
@@ -38,10 +38,10 @@ export default function Home() {
               className="py-2 px-4 border-2 border-blue-500 rounded-full">
               Connect on LinkedIn
             </a>
-            <a href="https://mobile.twitter.com/bradenhirschi29" className="py-2 px-4 border-2 border-background-700 dark:border-background-500 rounded-full">
+            <a href="https://mobile.twitter.com/bradenhirschi29" className="py-2 px-4 border-2 border-zinc-700 dark:border-zinc-500 rounded-full">
               Follow me on Twitter
             </a>
-            <a href="https://github.com/bradenhirschi29" className="py-2 px-4 border-2 border-background-500 dark:border-white rounded-full">
+            <a href="https://github.com/bradenhirschi29" className="py-2 px-4 border-2 border-zinc-500 dark:border-white rounded-full">
               View my GitHub
             </a>
           </div>
@@ -50,7 +50,11 @@ export default function Home() {
       </section>
 
       {/* GitHub contributions section */}
-      <section className="flex justify-center">
+      <section className="flex flex-col items-center justify-center min-h-screen bg-zinc-200 dark:bg-zinc-800">
+        <div className="text-5xl uppercase pb-4">
+          My GitHub Contributions
+        </div>
+
         <a href="https://github.com/bradenhirschi29">
           <img src="https://ghchart.rshah.org/3B82F6/bradenhirschi29" alt="bradenhirschi29's GitHub contributions chart" />
         </a>

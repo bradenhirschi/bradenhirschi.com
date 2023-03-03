@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 :root {
-  @apply dark:bg-background-900 dark:text-white;
+  @apply dark:bg-zinc-900 dark:text-white;
   color-scheme: light dark;
 }
