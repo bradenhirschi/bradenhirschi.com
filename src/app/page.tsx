@@ -30,7 +30,7 @@ export default function Home() {
           <div className="text-lg">
             I&apos;m a passionate engineer and creative thinker working as a front-end web developer. I enjoy
             building websites and web apps using Angular, Node.js, and Express.js. As a software developer, I&apos;ve learned
-            the importance of working with a team, following industry standards and best practices for code
+            the importance of working with a team, following industry standards/best practices for code
             organization, and conducting thorough research to solve complex problems.
           </div>
           <div className="flex flex-row pt-6 gap-2 text-lg">
