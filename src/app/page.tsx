@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headshot from "../../public/headshot.png";
+import headshot from "../../public/headshot.jpg";
 
 export default function Home() {
   return (
