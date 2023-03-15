@@ -6,3 +6,7 @@
   @apply dark:bg-zinc-900 dark:text-white;
   color-scheme: light dark;
 }
+
+.card {
+  @apply p-6 rounded-3xl shadow;
+}
