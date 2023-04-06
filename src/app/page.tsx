@@ -1,5 +1,6 @@
 import Image from "next/image";
 import headshot from "../../public/headshot.jpg";
+import amyHirschiCoaching from "../../public/amy-hirschi-coaching.png";
 
 const codeLinks: { link: string; title: string; description: string }[] = [
   {
@@ -14,7 +15,7 @@ function Github() {
     <section className="flex flex-col items-center justify-center min-h-screen bg-zinc-200 dark:bg-zinc-800">
       <div className="text-5xl uppercase pb-4">My GitHub Contributions</div>
       <a href="https://github.com/bradenhirschi29">
-        <img
+        <Image
           src="https://ghchart.rshah.org/3B82F6/bradenhirschi29"
           alt="bradenhirschi29's GitHub contributions chart"
         />
@@ -42,6 +43,28 @@ function Github() {
   );
 }
 
+function Portfolio() {
+  return (
+    <section className="grid gap-8 bg-zinc-100 dark:bg-zinc-800 md:grid-cols-2 px-8 md:px-16 lg:px-40 py-24">
+      <h1>
+        My work
+      </h1>
+      <div></div>
+      <a className="card" href="http://www.amyhirschicoaching.com">
+        <h5 className="mb-4">
+          Amy Hirschi Coaching
+        </h5>
+        <Image src={amyHirschiCoaching} alt={"Screenshot of amyhirschicoaching.com"} className="rounded-md"></Image>
+      </a>
+      <div className="card">
+        <h5>
+          Project 2  
+        </h5>
+      </div>
+    </section>
+  )
+}
+
 export default function Home() {
   return (
     <main>
@@ -52,27 +75,28 @@ export default function Home() {
           <Image
             src={headshot}
             alt="headshot"
-            className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-zinc-700 dark:outline-zinc-500"
+            className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-zinc-500"
+            priority
           />
         </div>
 
         {/* Right side w/ words */}
         <div>
-          <div className="text-zinc-700 dark:text-zinc-500 text-xl">
+          <h3 className="text-zinc-700 dark:text-zinc-500 text-xl">
             Hello! My name is:
-          </div>
-          <div className="text-5xl uppercase pb-4 flex-col sm:flex-row">
+          </h3>
+          <h1 className="pb-4 flex-col sm:flex-row">
             Braden
             <span className="font-serif text-blue-600">&nbsp;Hirschi</span>
-          </div>
-          <div className="text-lg">
+          </h1>
+          <p className="text-lg">
             I&apos;m a passionate front-end engineer. I enjoy building websites
             and web apps using modern tools like React, Node.js, and Express.js.
             As a software developer, I&apos;ve learned the importance of working
             with a team, following industry standards and best practices for
             writing code, and conducting thorough research to solve complex
             problems.
-          </div>
+          </p>
           <div className="flex flex-row pt-6 gap-2 text-lg">
             <a
               href="https://www.linkedin.com/in/braden-hirschi/"
@@ -95,6 +119,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Portfolio />
     </main>
   );
 }
