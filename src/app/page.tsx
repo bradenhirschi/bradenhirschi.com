@@ -1,69 +1,7 @@
 import Image from "next/image";
 import headshot from "../../public/headshot.jpg";
-import amyHirschiCoaching from "../../public/amy-hirschi-coaching.png";
-
-const codeLinks: { link: string; title: string; description: string }[] = [
-  {
-    link: "https://github.com/bradenhirschi29/bradenhirschi.com",
-    title: "bradenhirschi.com",
-    description: "Open source code for this website!",
-  },
-];
-
-function Github() {
-  return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-zinc-200 dark:bg-zinc-800">
-      <div className="text-5xl uppercase pb-4">My GitHub Contributions</div>
-      <a href="https://github.com/bradenhirschi29">
-        <Image
-          src="https://ghchart.rshah.org/3B82F6/bradenhirschi29"
-          alt="bradenhirschi29's GitHub contributions chart"
-        />
-      </a>
-
-      <div className="w-full my-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
-          {codeLinks.map((codeLink) => (
-            <a
-              key={JSON.stringify(codeLink)}
-              href={codeLink.link}
-              target="_blank"
-              rel="noreferrer"
-              className="card hover:bg-zinc-50 dark:bg-zinc-50/5 dark:hover:bg-zinc-50/10"
-            >
-              <h1 className="label">{codeLink.title}</h1>
-              <h2 className="text-sm font-light secondary-label line-clamp-2">
-                {codeLink.description}
-              </h2>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Portfolio() {
-  return (
-    <section className="grid gap-8 bg-zinc-100 dark:bg-zinc-800 md:grid-cols-2 px-8 md:px-16 lg:px-40 py-24">
-      <h1>
-        My work
-      </h1>
-      <div></div>
-      <a className="card" href="http://www.amyhirschicoaching.com">
-        <h5 className="mb-4">
-          Amy Hirschi Coaching
-        </h5>
-        <Image src={amyHirschiCoaching} alt={"Screenshot of amyhirschicoaching.com"} className="rounded-md"></Image>
-      </a>
-      <div className="card">
-        <h5>
-          Project 2  
-        </h5>
-      </div>
-    </section>
-  )
-}
+import Github from "./github";
+import Portfolio from "./portfolio";
 
 export default function Home() {
   return (
@@ -121,6 +59,8 @@ export default function Home() {
       </section>
 
       <Portfolio />
+
+      <Github />
     </main>
   );
 }
