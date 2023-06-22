@@ -43,12 +43,6 @@ export default function Home() {
               Connect on LinkedIn
             </a>
             <a
-              href="https://mobile.twitter.com/bradenhirschi29"
-              className="py-2 px-4 border-2 border-zinc-700 dark:border-zinc-500 rounded-full"
-            >
-              Follow me on Twitter
-            </a>
-            <a
               href="https://github.com/bradenhirschi29"
               className="py-2 px-4 border-2 border-zinc-500 dark:border-white rounded-full"
             >
