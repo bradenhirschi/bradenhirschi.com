@@ -29,7 +29,7 @@ export default function Home() {
           </h1>
           <p className="text-lg">
             I&apos;m a passionate front-end engineer. I enjoy building websites
-            and web apps using modern tools like React, Node.js, and Express.js.
+            and web apps using React and Next.js.
             As a software developer, I&apos;ve learned the importance of working
             with a team, following industry standards and best practices for
             writing code, and conducting thorough research to solve complex
