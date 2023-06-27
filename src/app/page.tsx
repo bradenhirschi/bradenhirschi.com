@@ -24,8 +24,8 @@ export default function Home() {
             Hello! My name is:
           </h3>
           <h1 className="pb-4 flex-col sm:flex-row">
-            John
-            <span className="font-serif text-blue-600">&nbsp;Wayne</span>
+            Braden
+            <span className="font-serif text-blue-600">&nbsp;Hirschi</span>
           </h1>
           <p className="text-lg">
             I&apos;m a passionate front-end engineer. I enjoy building websites
