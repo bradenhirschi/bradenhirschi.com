@@ -17,7 +17,9 @@ export default function Portfolio() {
         />
       </Link>
       <Link className="card" href="https://stockmarket-game-puce.vercel.app/">
-        <h5>(In progress) Clone of the 1963 Stock Market Game</h5>
+        <h5 className="mb-4">
+          (In progress) Clone of the 1963 Stock Market Game
+        </h5>
         <Image
           src={stockmarketGame}
           alt={"Screenshot of my Stock Market Game project"}
