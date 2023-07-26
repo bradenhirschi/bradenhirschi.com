@@ -3,28 +3,28 @@
 import { useState } from "react";
 import { BiPaint } from "react-icons/bi";
 
-const ThemeSelect = () => {
+const ThemeSelect = ({ setTheme }: { setTheme: any }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const themes = [
-    // Gray and blue
     {
+      name: "gray-blue",
       text: "#ffffff",
       primary: "#3B82F6",
       secondary: "#71717a",
       backgroundPrimary: "#18181b",
       backgroundSecondary: "#27272a",
     },
-    // Navy and yellow
     {
+      name: "navy-yellow",
       text: "#ffffff",
       primary: "#f59e0b",
       secondary: "#64748b",
       backgroundPrimary: "#0f172a",
       backgroundSecondary: "#1e293b",
     },
-    // Green and tan
     {
+      name: "green-tan",
       text: "#000000",
       primary: "#16a34a",
       secondary: "#166534",
@@ -50,6 +50,7 @@ const ThemeSelect = () => {
       theme.backgroundSecondary
     );
     setMenuOpen(false);
+    setTheme(theme);
   };
 
   return (

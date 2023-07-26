@@ -12,15 +12,21 @@ const codeLinks: { link: string; title: string; description: string }[] = [
   },
 ];
 
-export default function Github() {
-  const getPrimaryColor = () => {};
+export default function Github({ theme }: { theme: any }) {
+  let chartColor;
+
+  if (theme && theme.primary) {
+    chartColor = theme.primary.slice(1);
+  } else {
+    chartColor = "3B82F6";
+  }
 
   return (
     <section className="flex flex-col px-8 md:px-16 lg:px-40 items-center justify-center min-h-screen">
       <h1 className="pb-4">My Code</h1>
       <a href="https://github.com/bradenhirschi29">
         <img
-          src="https://ghchart.rshah.org/3B82F6/bradenhirschi29"
+          src={`https://ghchart.rshah.org/${chartColor}/bradenhirschi29`}
           alt="bradenhirschi29's GitHub contributions chart"
         />
       </a>

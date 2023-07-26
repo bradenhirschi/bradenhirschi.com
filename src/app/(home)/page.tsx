@@ -1,25 +1,51 @@
+"use client";
+
 import Image from "next/image";
-import headshot from "../../../public/headshot-gray-blue.jpg";
+import { useState } from "react";
+import headshotGrayBlue from "../../../public/headshot-gray-blue.jpg";
+import headshotGreenTan from "../../../public/headshot-green-tan.jpg";
+import headshotNavyYellow from "../../../public/headshot-navy-yellow.jpg";
 import Github from "./github";
 import Portfolio from "./portfolio";
 import ThemeSelect from "./theme-select";
 
 export default function Home() {
+  const [theme, setTheme] = useState({
+    name: "gray-blue",
+    text: "#ffffff",
+    primary: "#3B82F6",
+    secondary: "#71717a",
+    backgroundPrimary: "#18181b",
+    backgroundSecondary: "#27272a",
+  });
+
   return (
     <main>
       {/* Hero section */}
       <section className="min-h-screen px-8 md:px-16 lg:px-40 flex flex-col md:flex-row items-center justify-center lg:gap-16">
         {/* Left side w/ picture */}
         <div className="relative m-8">
-          {/*window
-            .getComputedStyle(document.documentElement)
-  .getPropertyValue("background-color")*/}
-          <Image
-            src={headshot}
-            alt="headshot"
-            className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
-            priority
-          />
+          {theme.name === "gray-blue" && (
+            <Image
+              src={headshotGrayBlue}
+              alt="headshot"
+              className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
+            />
+          )}
+          {theme.name === "green-tan" && (
+            <Image
+              src={headshotGreenTan}
+              alt="headshot"
+              className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
+            />
+          )}
+          {theme.name === "navy-yellow" && (
+            <Image
+              src={headshotNavyYellow}
+              alt="headshot"
+              className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
+            />
+          )}
         </div>
 
         {/* Right side w/ words */}
@@ -55,9 +81,9 @@ export default function Home() {
 
       <Portfolio />
 
-      <Github />
+      <Github theme={theme} />
 
-      <ThemeSelect />
+      <ThemeSelect setTheme={setTheme} />
     </main>
   );
 }
