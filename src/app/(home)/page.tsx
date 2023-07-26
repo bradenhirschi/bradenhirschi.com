@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import headshotGrayBlue from "../../../public/headshot-gray-blue.jpg";
-import headshotGreenTan from "../../../public/headshot-green-tan.jpg";
-import headshotNavyYellow from "../../../public/headshot-navy-yellow.jpg";
+import headshotGrayBlue from "../../../public/headshot-gray-blue.webp";
+import headshotGreenTan from "../../../public/headshot-green-tan.webp";
+import headshotNavyYellow from "../../../public/headshot-navy-yellow.webp";
 import Github from "./github";
 import Portfolio from "./portfolio";
 import ThemeSelect from "./theme-select";
