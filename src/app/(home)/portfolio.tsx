@@ -5,7 +5,7 @@ import stockmarketGame from "../../../public/stockmarket-game.png";
 
 export default function Portfolio() {
   return (
-    <section className="grid gap-8 bg-background-secondary md:grid-cols-2 px-8 md:px-16 lg:px-40 py-24">
+    <section className="grid gap-8 bg-background-secondary md:grid-cols-2 px-4 md:px-16 lg:px-40 py-24">
       <h1>My work</h1>
       <div></div>
       <Link className="card" href="https://amyhirschicoaching-com.vercel.app/">

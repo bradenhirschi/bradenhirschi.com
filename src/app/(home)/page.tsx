@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero section */}
-      <section className="min-h-screen px-8 md:px-16 lg:px-40 flex flex-col md:flex-row items-center justify-center lg:gap-16">
+      <section className="min-h-screen px-4 md:px-16 lg:px-40 py-8 flex flex-col lg:flex-row items-center justify-center lg:gap-16">
         {/* Left side w/ picture */}
         <div className="relative m-8">
           {theme.name === "gray-blue" && (
@@ -51,7 +51,7 @@ export default function Home() {
         {/* Right side w/ words */}
         <div>
           <h3 className="text-secondary text-xl">Hello! My name is:</h3>
-          <h1 className="pb-4 flex-col sm:flex-row">
+          <h1 className="pb-4 flex-row">
             Braden
             <span className="text-primary font-serif">&nbsp;Hirschi</span>
           </h1>
@@ -65,15 +65,15 @@ export default function Home() {
           <div className="flex flex-row pt-6 gap-2 text-lg">
             <a
               href="https://www.linkedin.com/in/braden-hirschi/"
-              className="py-2 px-4 border-2 border-primary rounded-full"
+              className="py-2 px-4 border-2 border-primary rounded-full flex flex-row"
             >
-              Connect on LinkedIn
+              <span className="hidden sm:block">Connect on&nbsp;</span>LinkedIn
             </a>
             <a
               href="https://github.com/bradenhirschi29"
-              className="py-2 px-4 border-2 border-secondary rounded-full"
+              className="py-2 px-4 border-2 border-secondary rounded-full flex flex-row"
             >
-              View my GitHub
+              <span className="hidden sm:block">View my&nbsp;</span>GitHub
             </a>
           </div>
         </div>

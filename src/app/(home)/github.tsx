@@ -41,10 +41,10 @@ export default function Github({ theme }: { theme: any }) {
               rel="noreferrer"
               className="card bg-zinc-50/5 hover:bg-zinc-50/10"
             >
-              <h2 className="label">{codeLink.title}</h2>
-              <h3 className="text-sm font-light secondary-label line-clamp-2">
-                {codeLink.description}
-              </h3>
+              <h2 className="overflow-ellipsis overflow-hidden whitespace-nowrap">
+                {codeLink.title}
+              </h2>
+              <p className="text-sm font-light">{codeLink.description}</p>
             </a>
           ))}
         </div>
