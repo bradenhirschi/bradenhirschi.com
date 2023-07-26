@@ -7,11 +7,14 @@ const codeLinks: { link: string; title: string; description: string }[] = [
   {
     link: "https://github.com/bradenhirschi29/amyhirschicoaching.com",
     title: "amyhirschicoaching.com",
-    description: "Open source code for my mother's website which I designed and developed",
+    description:
+      "Open source code for my mother's website which I designed and developed",
   },
 ];
 
 export default function Github() {
+  const getPrimaryColor = () => {};
+
   return (
     <section className="flex flex-col px-8 md:px-16 lg:px-40 items-center justify-center min-h-screen">
       <h1 className="pb-4">My Code</h1>
@@ -30,7 +33,7 @@ export default function Github() {
               href={codeLink.link}
               target="_blank"
               rel="noreferrer"
-              className="card hover:bg-zinc-50 dark:bg-zinc-50/5 dark:hover:bg-zinc-50/10"
+              className="card bg-zinc-50/5 hover:bg-zinc-50/10"
             >
               <h2 className="label">{codeLink.title}</h2>
               <h3 className="text-sm font-light secondary-label line-clamp-2">

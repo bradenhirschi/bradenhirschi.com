@@ -3,12 +3,18 @@
 @tailwind utilities;
 
 :root {
-  @apply dark:bg-zinc-900 dark:text-white;
+  background-color: var(--background-primary);
+  color: var(--text);
   color-scheme: light dark;
+  --text: #ffffff;
+  --primary: #3b82f6;
+  --secondary: #71717a;
+  --background-primary: #18181b;
+  --background-secondary: #27272a;
 }
 
 .card {
-  @apply p-6 rounded-3xl shadow-xl dark:shadow-none dark:border dark:border-white;
+  @apply p-6 rounded-3xl border border-secondary;
 }
 
 h1 {
@@ -29,4 +35,78 @@ h4 {
 
 h5 {
   @apply text-xl;
+}
+
+/*********************/
+/*                   */
+/*  Theme variables  */
+/*                   */
+/*********************/
+
+/* Primary */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.outline-primary {
+  outline-color: var(--primary);
+}
+
+/* Secondary */
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.outline-secondary {
+  outline-color: var(--secondary);
+}
+
+/* Background primary */
+.bg-background-primary {
+  background-color: var(--background-primary);
+}
+
+.text-background-primary {
+  color: var(--background-primary);
+}
+
+.border-background-primary {
+  border-color: var(--background-primary);
+}
+
+.outline-background-primary {
+  outline-color: var(--background-primary);
+}
+
+/* Background secondary */
+.bg-background-secondary {
+  background-color: var(--background-secondary);
+}
+
+.text-background-secondary {
+  color: var(--background-secondary);
+}
+
+.border-background-secondary {
+  border-color: var(--background-secondary);
+}
+
+.outline-background-secondary {
+  outline-color: var(--background-secondary);
 }
