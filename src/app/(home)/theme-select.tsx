@@ -3,7 +3,13 @@
 import { useState } from "react";
 import { BiPaint } from "react-icons/bi";
 
-const ThemeSelect = ({ setTheme }: { setTheme: any }) => {
+const ThemeSelect = ({
+  currentTheme,
+  setCurrentTheme,
+}: {
+  currentTheme: any;
+  setCurrentTheme: any;
+}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const themes = [
@@ -16,6 +22,14 @@ const ThemeSelect = ({ setTheme }: { setTheme: any }) => {
       backgroundSecondary: "#27272a",
     },
     {
+      name: "red-white",
+      text: "#000000",
+      primary: "#FA2742",
+      secondary: "#373833",
+      backgroundPrimary: "#E8EAE3",
+      backgroundSecondary: "#d6d7d1",
+    },
+    {
       name: "navy-yellow",
       text: "#ffffff",
       primary: "#f59e0b",
@@ -23,6 +37,7 @@ const ThemeSelect = ({ setTheme }: { setTheme: any }) => {
       backgroundPrimary: "#0f172a",
       backgroundSecondary: "#1e293b",
     },
+
     {
       name: "green-tan",
       text: "#000000",
@@ -50,7 +65,7 @@ const ThemeSelect = ({ setTheme }: { setTheme: any }) => {
       theme.backgroundSecondary
     );
     setMenuOpen(false);
-    setTheme(theme);
+    setCurrentTheme(theme);
   };
 
   return (
@@ -64,19 +79,21 @@ const ThemeSelect = ({ setTheme }: { setTheme: any }) => {
       {menuOpen && (
         <div className="flex flex-col">
           {themes.map((theme) => {
-            return (
-              <button
-                key={theme.primary}
-                className="rounded-full w-[40px] h-[40px] mt-2 flex items-center justify-center"
-                style={{
-                  backgroundColor: theme.primary,
-                  color: theme.backgroundSecondary,
-                }}
-                onClick={() => handleChangeTheme(theme)}
-              >
-                <BiPaint size="24" />
-              </button>
-            );
+            if (theme.name !== currentTheme.name) {
+              return (
+                <button
+                  key={theme.primary}
+                  className="rounded-full w-[40px] h-[40px] mt-2 flex items-center justify-center"
+                  style={{
+                    backgroundColor: theme.primary,
+                    color: theme.backgroundSecondary,
+                  }}
+                  onClick={() => handleChangeTheme(theme)}
+                >
+                  <BiPaint size="24" />
+                </button>
+              );
+            }
           })}
         </div>
       )}
