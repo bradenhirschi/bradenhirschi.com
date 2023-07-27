@@ -1,8 +1,15 @@
 const codeLinks: { link: string; title: string; description: string }[] = [
   {
+    link: "https://github.com/bradenhirschi29/gd-styles",
+    title: "GD Styles",
+    description:
+      "Chrome extension that converts any element's CSS styles to Tailwind classes",
+  },
+  {
     link: "https://github.com/bradenhirschi29/bradenhirschi.com",
     title: "bradenhirschi.com",
-    description: "Open source code for this website!",
+    description:
+      "Open source code for this website! Built with Next.js and Typescript and styled with Tailwind and custom CSS",
   },
   {
     link: "https://github.com/bradenhirschi29/amyhirschicoaching.com",
@@ -12,7 +19,7 @@ const codeLinks: { link: string; title: string; description: string }[] = [
   },
 ];
 
-export default function Github({ theme }: { theme: any }) {
+const MyCode = ({ theme }: { theme: any }) => {
   let chartColor;
 
   if (theme && theme.primary) {
@@ -51,4 +58,6 @@ export default function Github({ theme }: { theme: any }) {
       </div>
     </section>
   );
-}
+};
+
+export default MyCode;

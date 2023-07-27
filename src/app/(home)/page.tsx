@@ -6,7 +6,7 @@ import headshotGrayBlue from "../../../public/headshot-gray-blue.webp";
 import headshotGreenTan from "../../../public/headshot-green-tan.webp";
 import headshotNavyYellow from "../../../public/headshot-navy-yellow.webp";
 import headshotRedWhite from "../../../public/headshot-red-white.webp";
-import Github from "./github";
+import MyCode from "./my-code";
 import Portfolio from "./portfolio";
 import ThemeSelect from "./theme-select";
 
@@ -89,7 +89,7 @@ export default function Home() {
 
       <Portfolio />
 
-      <Github theme={currentTheme} />
+      <MyCode theme={currentTheme} />
 
       <ThemeSelect
         currentTheme={currentTheme}
