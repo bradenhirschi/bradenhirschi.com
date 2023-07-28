@@ -29,7 +29,7 @@ const MyCode = ({ theme }: { theme: any }) => {
   }
 
   return (
-    <section className="flex flex-col px-8 md:px-16 lg:px-40 items-center justify-center min-h-screen">
+    <section className="flex flex-col px-8 py-8 md:px-16 lg:px-40 items-center justify-center min-h-screen">
       <h1 className="pb-4">My Code</h1>
       <a href="https://github.com/bradenhirschi29">
         <img
@@ -38,7 +38,7 @@ const MyCode = ({ theme }: { theme: any }) => {
         />
       </a>
 
-      <div className="w-full my-8">
+      <div className="w-full mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
           {codeLinks.map((codeLink) => (
             <a
