@@ -8,7 +8,7 @@ export default function Portfolio() {
     <section className="grid gap-8 bg-background-secondary md:grid-cols-2 px-4 md:px-16 lg:px-40 py-24">
       <h1>My work</h1>
       <div></div>
-      <Link className="card" href="https://amyhirschicoaching-com.vercel.app/">
+      <Link className="card" href="https://www.amyhirschicoaching.com">
         <h5 className="mb-4">Amy Hirschi Coaching</h5>
         <Image
           src={amyHirschiCoaching}
