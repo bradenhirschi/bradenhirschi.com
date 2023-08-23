@@ -1,18 +1,18 @@
 const codeLinks: { link: string; title: string; description: string }[] = [
   {
-    link: "https://github.com/bradenhirschi29/gd-styles",
+    link: "https://github.com/bradenhirschi/gd-styles",
     title: "GD Styles",
     description:
       "Chrome extension that converts any element's CSS styles to Tailwind classes",
   },
   {
-    link: "https://github.com/bradenhirschi29/bradenhirschi.com",
+    link: "https://github.com/bradenhirschi/bradenhirschi.com",
     title: "bradenhirschi.com",
     description:
       "Open source code for this website! Built with Next.js and Typescript and styled with Tailwind and custom CSS",
   },
   {
-    link: "https://github.com/bradenhirschi29/amyhirschicoaching.com",
+    link: "https://github.com/bradenhirschi/amyhirschicoaching.com",
     title: "amyhirschicoaching.com",
     description:
       "Open source code for my mother's website which I designed and developed",
@@ -31,10 +31,10 @@ const MyCode = ({ theme }: { theme: any }) => {
   return (
     <section className="flex flex-col px-8 py-8 md:px-16 lg:px-40 items-center justify-center min-h-screen">
       <h1 className="pb-4">My Code</h1>
-      <a href="https://github.com/bradenhirschi29">
+      <a href="https://github.com/bradenhirschi">
         <img
-          src={`https://ghchart.rshah.org/${chartColor}/bradenhirschi29`}
-          alt="bradenhirschi29's GitHub contributions chart"
+          src={`https://ghchart.rshah.org/${chartColor}/bradenhirschi`}
+          alt="bradenhirschi's GitHub contributions chart"
         />
       </a>
 
