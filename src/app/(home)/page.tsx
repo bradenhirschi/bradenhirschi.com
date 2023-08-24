@@ -78,7 +78,7 @@ export default function Home() {
               <span className="hidden sm:block">Connect on&nbsp;</span>LinkedIn
             </a>
             <a
-              href="https://github.com/bradenhirschi29"
+              href="https://github.com/bradenhirschi"
               className="py-2 px-4 border-2 border-secondary rounded-full flex flex-row"
             >
               <span className="hidden sm:block">View my&nbsp;</span>GitHub
