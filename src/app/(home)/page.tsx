@@ -64,11 +64,11 @@ export default function Home() {
             <span className="text-primary font-serif">&nbsp;Hirschi</span>
           </h1>
           <p className="text-lg">
-            I&apos;m a passionate front-end engineer. I enjoy building websites
-            and web apps using React and Next.js. As a software developer,
-            I&apos;ve learned the importance of working with a team, following
-            industry standards and best practices for writing code, and
-            conducting thorough research to solve complex problems.
+            I&apos;m a passionate full-stack software engineer with a knack for
+            creating dynamic digital experiences. I pride myself on my ability
+            to seamlessly integrate elegant front-end experiences with smooth
+            and robust back-end functionality. Keep scrolling to see some of my
+            work!
           </p>
           <div className="flex flex-row pt-6 gap-2 text-lg">
             <a
