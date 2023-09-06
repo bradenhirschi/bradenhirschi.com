@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import amyHirschiCoaching from "../../../public/amy-hirschi-coaching.png";
-import stockmarketGame from "../../../public/stockmarket-game.png";
+import amyHirschiCoaching from "../../public/amy-hirschi-coaching.png";
+import gdStyles from "../../public/gd-styles.png";
 
 export default function Portfolio() {
   return (
@@ -16,13 +16,15 @@ export default function Portfolio() {
           className="rounded-md"
         />
       </Link>
-      <Link className="card" href="https://stockmarket-game-puce.vercel.app/">
-        <h5 className="mb-4">
-          (In progress) Clone of the 1963 Stock Market Game
-        </h5>
+      {/*<Link className="card" href="./gd-styles">*/}
+      <Link
+        className="card"
+        href="https://chrome.google.com/webstore/detail/gd-styles/pjjhmajhdkfcolcpmfgimbgmkonbfnpl"
+      >
+        <h5 className="mb-4">GD Styles Chrome Extension</h5>
         <Image
-          src={stockmarketGame}
-          alt={"Screenshot of my Stock Market Game project"}
+          src={gdStyles}
+          alt={"Screenshot of my GD Styles chrome store extension listing"}
           className="rounded-md"
         />
       </Link>
