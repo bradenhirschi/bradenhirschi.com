@@ -1,18 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import amyHirschiCoaching from "../../public/amy-hirschi-coaching.png";
+import jacobHughesMusic from "../../public/jacob-hughes-music.png";
 import gdStyles from "../../public/gd-styles.png";
 
 export default function Portfolio() {
   return (
-    <section className="grid gap-8 bg-background-secondary md:grid-cols-2 px-4 md:px-16 lg:px-40 py-24">
-      <h1>My work</h1>
-      <div></div>
+    <section className="grid gap-8 bg-background-secondary md:grid-cols-3 px-4 md:px-8 lg:px-24 py-24">
+      <div className="col-span-3">
+        <h1>My work</h1>
+      </div>
       <Link className="card" href="https://www.amyhirschicoaching.com">
         <h5 className="mb-4">Amy Hirschi Coaching</h5>
         <Image
           src={amyHirschiCoaching}
           alt={"Screenshot of amyhirschicoaching.com"}
+          className="rounded-md"
+        />
+      </Link>
+      <Link className="card" href="https://jacob-hughes-music.vercel.app/">
+        <h5 className="mb-4">Jacob Hughes Music</h5>
+        <Image
+          src={jacobHughesMusic}
+          alt={"Screenshot of jacobhughesmusic.com"}
           className="rounded-md"
         />
       </Link>
