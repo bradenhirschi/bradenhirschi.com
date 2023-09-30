@@ -26,15 +26,11 @@ export default function Portfolio() {
           className="rounded-md"
         />
       </Link>
-      {/*<Link className="card" href="./gd-styles">*/}
-      <Link
-        className="card"
-        href="https://chrome.google.com/webstore/detail/gd-styles/pjjhmajhdkfcolcpmfgimbgmkonbfnpl"
-      >
+      <Link className="card" href="https://gdstyles.vercel.app/">
         <h5 className="mb-4">GD Styles Chrome Extension</h5>
         <Image
           src={gdStyles}
-          alt={"Screenshot of my GD Styles chrome store extension listing"}
+          alt={"Screenshot of my GD Styles chrome store extension website"}
           className="rounded-md"
         />
       </Link>
