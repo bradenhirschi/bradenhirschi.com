@@ -6,7 +6,7 @@ import gdStyles from "../../public/gd-styles.png";
 
 export default function Portfolio() {
   return (
-    <section className="grid gap-8 bg-background-secondary grid-cols-1 md:grid-cols-3 px-4 md:px-8 lg:px-24 py-24">
+    <section className="flex flex-col md:grid gap-8 bg-background-secondary md:grid-cols-3 px-4 md:px-8 lg:px-24 py-24">
       <div className="col-span-3">
         <h1>My work</h1>
       </div>
