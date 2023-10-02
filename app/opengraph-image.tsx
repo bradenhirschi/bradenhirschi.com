@@ -21,11 +21,6 @@ export default async function OG() {
             "linear-gradient(to bottom right, #E0E7FF 25%, #ffffff 50%, #CFFAFE 75%)",
         }}
       >
-        <img
-          src={new URL("../public/gd-styles.png", import.meta.url).toString()}
-          alt="Sediment Logo"
-          tw="w-20 h-20 mb-4 opacity-95"
-        />
         <h1
           style={{
             fontSize: "80px",
@@ -37,7 +32,7 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          Sediment - The Budget Card
+          Braden Hirschi
         </h1>
       </div>
     ),
