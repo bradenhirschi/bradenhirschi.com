@@ -17,6 +17,12 @@ const codeLinks: { link: string; title: string; description: string }[] = [
     description:
       "Open source code for my mother's website which I designed and developed",
   },
+  {
+    link: "https://github.com/bradenhirschi/asana-article-helper",
+    title: "asana-article-helper",
+    description:
+      "NPM package that integrates Asana task manager with Google Docs for improved workflow for my copywriting",
+  },
 ];
 
 const MyCode = ({ theme }: { theme: any }) => {
