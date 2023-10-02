@@ -16,15 +16,13 @@ export default async function OG() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "white",
-          backgroundImage:
-            "linear-gradient(to bottom right, #E0E7FF 25%, #ffffff 50%, #CFFAFE 75%)",
+          backgroundColor: "#18181b",
         }}
       >
         <h1
           style={{
             fontSize: "80px",
-            fontFamily: "SF Pro",
+            fontWeight: "bold",
             background:
               "linear-gradient(to bottom right, #000000 21.66%, #78716c 86.47%)",
             backgroundClip: "text",
@@ -32,7 +30,8 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          Braden Hirschi
+          Braden{" "}
+          <span style={{ color: "3B82F6", fontFamily: "serif" }}>Hirschi</span>
         </h1>
       </div>
     ),
