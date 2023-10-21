@@ -3,6 +3,7 @@ import Link from "next/link";
 import amyHirschiCoaching from "../../public/amy-hirschi-coaching.png";
 import jacobHughesMusic from "../../public/jacob-hughes-music.png";
 import gdStyles from "../../public/gd-styles.png";
+import kbhCreative from "../../public/kbh-creative.png";
 
 export default function Portfolio() {
   return (
@@ -23,6 +24,16 @@ export default function Portfolio() {
         <Image
           src={jacobHughesMusic}
           alt={"Screenshot of jacobhughesmusic.com"}
+          className="rounded-md"
+        />
+      </Link>
+      <Link className="card" href="https://kbh-creative-com.vercel.app/">
+        <h5 className="mb-4">KBH Creative</h5>
+        <Image
+          src={kbhCreative}
+          alt={
+            "Screenshot of the website for my content writing studio KBH Creative"
+          }
           className="rounded-md"
         />
       </Link>
