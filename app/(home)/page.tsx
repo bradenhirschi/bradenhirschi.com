@@ -28,6 +28,8 @@ export default function Home() {
         <div className="relative m-8">
           {currentTheme.name === "gray-blue" && (
             <Image
+              priority
+              loading="eager"
               src={headshotGrayBlue}
               alt="headshot"
               className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
@@ -35,6 +37,8 @@ export default function Home() {
           )}
           {currentTheme.name === "green-tan" && (
             <Image
+              priority
+              loading="eager"
               src={headshotGreenTan}
               alt="headshot"
               className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
@@ -42,6 +46,8 @@ export default function Home() {
           )}
           {currentTheme.name === "navy-yellow" && (
             <Image
+              priority
+              loading="eager"
               src={headshotNavyYellow}
               alt="headshot"
               className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
@@ -49,6 +55,8 @@ export default function Home() {
           )}
           {currentTheme.name === "red-white" && (
             <Image
+              priority
+              loading="eager"
               src={headshotRedWhite}
               alt="headshot"
               className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"

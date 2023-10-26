@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata = {
   title: "Braden Hirschi",
   description: "Personal website for Braden Hirschi",
+  metadataBase: new URL("https://www.bradenhirschi.com"),
 };
 
 export default function RootLayout({
