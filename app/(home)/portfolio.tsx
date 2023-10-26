@@ -19,7 +19,7 @@ export default function Portfolio() {
           className="rounded-md"
         />
       </Link>
-      <Link className="card" href="https://jacob-hughes-music.vercel.app/">
+      <Link className="card" href="https://jacob-hughes-music.vercel.app">
         <h5 className="mb-4">Jacob Hughes Music</h5>
         <Image
           src={jacobHughesMusic}
@@ -27,7 +27,7 @@ export default function Portfolio() {
           className="rounded-md"
         />
       </Link>
-      <Link className="card" href="https://kbh-creative-com.vercel.app/">
+      <Link className="card" href="https://www.kbh-creative.com">
         <h5 className="mb-4">KBH Creative</h5>
         <Image
           src={kbhCreative}
