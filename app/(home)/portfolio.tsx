@@ -4,6 +4,7 @@ import amyHirschiCoaching from "../../public/amy-hirschi-coaching.png";
 import jacobHughesMusic from "../../public/jacob-hughes-music.png";
 import gdStyles from "../../public/gd-styles.png";
 import kbhCreative from "../../public/kbh-creative.png";
+import fireDaily from "../../public/fire-daily.png";
 
 export default function Portfolio() {
   return (
@@ -33,6 +34,16 @@ export default function Portfolio() {
           src={kbhCreative}
           alt={
             "Screenshot of the website for my content writing studio KBH Creative"
+          }
+          className="rounded-md"
+        />
+      </Link>
+      <Link className="card" href="https://www.firedailynews.com">
+        <h5 className="mb-4">Fire Daily</h5>
+        <Image
+          src={fireDaily}
+          alt={
+            "Screenshot of the website for my AI-written news website Fire Daily News"
           }
           className="rounded-md"
         />
