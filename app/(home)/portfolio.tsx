@@ -5,6 +5,7 @@ import jacobHughesMusic from "../../public/jacob-hughes-music.png";
 import gdStyles from "../../public/gd-styles.png";
 import kbhCreative from "../../public/kbh-creative.png";
 import fireDaily from "../../public/fire-daily.png";
+import vstServices from "../../public/vst-services.png";
 
 export default function Portfolio() {
   return (
@@ -53,6 +54,14 @@ export default function Portfolio() {
         <Image
           src={gdStyles}
           alt={"Screenshot of my GD Styles chrome store extension website"}
+          className="rounded-md"
+        />
+      </Link>
+      <Link className="card" href="https://vstservices.com/">
+        <h5 className="mb-4">VST Services</h5>
+        <Image
+          src={vstServices}
+          alt={"Screenshot of vstservices.com"}
           className="rounded-md"
         />
       </Link>
