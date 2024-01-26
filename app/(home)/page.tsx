@@ -68,9 +68,9 @@ export default function Home() {
         <div>
           <h3 className="text-secondary text-xl">Hello! My name is:</h3>
           <h1 className="pb-4 flex-row">
-            Braden
-            <span className="text-primary font-serif">&nbsp;Hirschi</span>
-          </h1>
+            John
+            <span className="text-primary font-serif">&nbsp;Travolta</span>
+          </h1> 
           <p className="text-lg">
             I&apos;m a passionate full-stack software engineer with a knack for
             creating dynamic digital experiences. I pride myself on my ability
