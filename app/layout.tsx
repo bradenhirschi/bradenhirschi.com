@@ -7,11 +7,11 @@ export const metadata = {
   metadataBase: new URL("https://www.bradenhirschi.com"),
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}) => {
   return (
     <html lang="en">
       <body>
@@ -21,3 +21,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export default RootLayout;
