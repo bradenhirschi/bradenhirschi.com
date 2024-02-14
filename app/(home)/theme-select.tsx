@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BiPaint } from "react-icons/bi";
 
 const ThemeSelect = ({
@@ -37,7 +37,6 @@ const ThemeSelect = ({
       backgroundPrimary: "#0f172a",
       backgroundSecondary: "#1e293b",
     },
-
     {
       name: "green-tan",
       text: "#000000",
@@ -68,10 +67,30 @@ const ThemeSelect = ({
     setCurrentTheme(theme);
   };
 
+  const handleGamesOpened = () => {
+    themes.push({
+      name: "doom-mode",
+      text: "#ffffff",
+      primary: "#95100b",
+      secondary: "#aaaaaa",
+      backgroundPrimary: "#000000",
+      backgroundSecondary: "#111111",
+    },)
+    handleChangeTheme(themes[themes.length-1])
+  }
+
+  useEffect(() => {
+    document.addEventListener('games-opened', handleGamesOpened);
+
+    return () => {
+      document.removeEventListener('games-opened', handleGamesOpened);
+    };
+  }, []);
+
   return (
     <div className="fixed top-0 left-0 m-4">
       <button
-        className="rounded-full flex items-center justify-center bg-primary text-background-primary w-[40px] h-[40px]"
+        className="rounded-full flex items-center justify-center bg-primary text-background-primary w-[40px] h-[40px] hover:w-[42px] hover:h-[42px]"
         onClick={handleChangeMenuState}
       >
         <BiPaint size="24" />

@@ -110,3 +110,39 @@ h5 {
 .outline-background-secondary {
   outline-color: var(--background-secondary);
 }
+
+/*******************/
+/*                 */
+/*  Games section  */
+/*                 */
+/*******************/
+#games {
+  height: 0;
+  line-height: 0;
+
+  transition: all 0.5s ease-in-out;
+}
+
+#games:target {
+  height: 100vh;
+}
+
+#games div {
+  display: none;
+}
+
+#games:target div {
+  display: block;
+}
+
+#games iframe {
+  display: none;
+}
+
+#games:target iframe {
+  display: flex;
+  width: 800px;
+  height: 670px;
+  overflow: hidden;
+  /* scale: 0.75; */
+}
