@@ -2,29 +2,19 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import headshotGrayBlue from '../../public/headshot-gray-blue.webp';
-import headshotGreenTan from '../../public/headshot-green-tan.webp';
-import headshotNavyYellow from '../../public/headshot-navy-yellow.webp';
-import headshotRedWhite from '../../public/headshot-red-white.webp';
-import headshotDoomMode from '../../public/headshot-doom-mode.webp';
+import headshot from '../../public/headshot.webp';
 import Games from './games';
 import MyCode from './my-code';
 import Portfolio from './portfolio';
 import ThemeSelect from './theme-select';
 import localFont from 'next/font/local';
+import { THEMES } from './themes';
 
-const doomLeftFont = localFont({ src: './AmazDooMLeft.ttf' });
-const doomRightFont = localFont({ src: './AmazDooMRight.ttf' });
+const doomLeftFont = localFont({ src: '../../public/AmazDooMLeft.ttf' });
+const doomRightFont = localFont({ src: '../../public/AmazDooMRight.ttf' });
 
 export default function Home() {
-  const [currentTheme, setCurrentTheme] = useState({
-    name: 'gray-blue',
-    text: '#ffffff',
-    primary: '#3B82F6',
-    secondary: '#71717a',
-    backgroundPrimary: '#18181b',
-    backgroundSecondary: '#27272a',
-  });
+  const [currentTheme, setCurrentTheme] = useState(THEMES.GRUVBOX);
 
   const makeKeySequenceListener = (keySequence: any, callback: () => void) => {
     let keys = '';
@@ -64,56 +54,18 @@ export default function Home() {
       <section className="min-h-screen px-4 md:px-16 lg:px-40 py-8 flex flex-col lg:flex-row items-center justify-center lg:gap-16">
         {/* Left side w/ picture */}
         <div className="relative m-8">
-          {currentTheme.name === 'gray-blue' && (
-            <Image
-              priority
-              loading="eager"
-              src={headshotGrayBlue}
-              alt="headshot"
-              className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
-            />
-          )}
-          {currentTheme.name === 'green-tan' && (
-            <Image
-              priority
-              loading="eager"
-              src={headshotGreenTan}
-              alt="headshot"
-              className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
-            />
-          )}
-          {currentTheme.name === 'navy-yellow' && (
-            <Image
-              priority
-              loading="eager"
-              src={headshotNavyYellow}
-              alt="headshot"
-              className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
-            />
-          )}
-          {currentTheme.name === 'red-white' && (
-            <Image
-              priority
-              loading="eager"
-              src={headshotRedWhite}
-              alt="headshot"
-              className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
-            />
-          )}
-          {currentTheme.name === 'doom-mode' && (
-            <Image
-              priority
-              loading="eager"
-              src={headshotDoomMode}
-              alt="headshot"
-              className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary"
-            />
-          )}
+          <Image
+            priority
+            loading="eager"
+            src={headshot}
+            alt="headshot"
+            className="h-[350px] w-[350px] min-w-[350px] rounded-full outline outline-8 outline-secondary bg-primary"
+          />
         </div>
 
         {/* Right side w/ words */}
         <div>
-          <h3 className="text-secondary text-xl">Hello! My name is:</h3>
+          <h3 className="text-secondary text-xl">Hello! My name is</h3>
 
           {currentTheme.name === 'doom-mode' ? (
             <div className="text-[100px]">

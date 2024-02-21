@@ -6,11 +6,12 @@
   background-color: var(--background-primary);
   color: var(--text);
   color-scheme: light dark;
-  --text: #ffffff;
-  --primary: #3b82f6;
-  --secondary: #71717a;
-  --background-primary: #18181b;
-  --background-secondary: #27272a;
+  /* Manually set theme to Gruvbox option at first. TODO come up with a better way to do this */
+  --text: #ebdbb2;
+  --primary: #458588;
+  --secondary: #d79921;
+  --background-primary: #282828;
+  --background-secondary: #1d2021;
 }
 
 .card {
