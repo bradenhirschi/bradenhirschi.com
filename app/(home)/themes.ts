@@ -8,14 +8,6 @@ export interface Theme {
 }
 
 export const THEMES: {[key: string]: Theme} = {
-  GRUVBOX: {
-    name: 'gruvbox',
-    text: '#ebdbb2',
-    primary: '#458588',
-    secondary: '#d79921',
-    backgroundPrimary: '#282828',
-    backgroundSecondary: '#1d2021',
-  },
   GRAY_BLUE: {
     name: 'gray-blue',
     text: '#ffffff',
@@ -23,6 +15,14 @@ export const THEMES: {[key: string]: Theme} = {
     secondary: '#71717a',
     backgroundPrimary: '#18181b',
     backgroundSecondary: '#27272a',
+  },
+  GRUVBOX: {
+    name: 'gruvbox',
+    text: '#ebdbb2',
+    primary: '#458588',
+    secondary: '#d79921',
+    backgroundPrimary: '#282828',
+    backgroundSecondary: '#1d2021',
   },
   RED_WHITE: {
     name: 'red-white',

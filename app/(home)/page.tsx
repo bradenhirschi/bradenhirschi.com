@@ -14,7 +14,7 @@ const doomLeftFont = localFont({ src: '../../public/AmazDooMLeft.ttf' });
 const doomRightFont = localFont({ src: '../../public/AmazDooMRight.ttf' });
 
 export default function Home() {
-  const [currentTheme, setCurrentTheme] = useState(THEMES.GRUVBOX);
+  const [currentTheme, setCurrentTheme] = useState(THEMES.GRAY_BLUE);
 
   const makeKeySequenceListener = (keySequence: any, callback: () => void) => {
     let keys = '';
