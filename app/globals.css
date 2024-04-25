@@ -14,12 +14,12 @@
   --background-secondary: 39 39 42;
 }
 
-.card {
-  @apply p-4 2xl:p-6 rounded-3xl border border-secondary;
+.work-card {
+  @apply p-4 2xl:p-6 rounded-3xl border border-secondary hover:bg-secondary/10;
 }
 
 .card-title {
-  @apply mb-4;
+  @apply mb-4 overflow-ellipsis overflow-hidden whitespace-nowrap;
   line-clamp: 1;
 }
 
@@ -168,12 +168,12 @@ body {
 }
 
 .code-card {
+  @apply p-4 md:pt-8;
   box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur)
       var(--card-box-shadow-1),
     0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur)
       var(--card-box-shadow-2),
     0 0 0 1px var(--card-border-color);
-  padding: 56px 16px 16px 16px;
   border-radius: 15px;
   cursor: pointer;
   position: relative;

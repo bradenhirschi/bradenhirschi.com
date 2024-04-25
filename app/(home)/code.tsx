@@ -47,7 +47,7 @@ const Code = ({ theme }: { theme: any }) => {
   }
 
   return (
-    <section className="h-screen min-h-screen snap-center flex flex-col px-8 py-8 md:px-16 lg:px-24 xl:px-32 items-center justify-center">
+    <section className="h-screen min-h-screen snap-center flex flex-col px-4 py-8 md:px-8 lg:px-24 xl:px-32 items-center justify-center">
       <h1 className="pb-4">My Code</h1>
       <a href="https://github.com/bradenhirschi">
         <img
@@ -57,8 +57,7 @@ const Code = ({ theme }: { theme: any }) => {
       </a>
 
       <div className="w-full mt-8">
-        {/* <div className="grid1 grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10"> */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-8 relative z-1">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-8 relative z-1">
           {codeLinks.map((codeLink) => (
             <a
               key={JSON.stringify(codeLink)}
@@ -67,9 +66,7 @@ const Code = ({ theme }: { theme: any }) => {
               rel="noreferrer"
               className="code-card"
             >
-              <h2 className="overflow-ellipsis overflow-hidden whitespace-nowrap">
-                {codeLink.title}
-              </h2>
+              <h4 className="card-title">{codeLink.title}</h4>
               <p className="text-sm font-light">{codeLink.description}</p>
               <div className="shine" />
               <div className="background">
