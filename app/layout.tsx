@@ -1,4 +1,3 @@
-import Footer from "./(home)/footer";
 import "./globals.css";
 
 export const metadata = {
@@ -7,19 +6,14 @@ export const metadata = {
   metadataBase: new URL("https://www.bradenhirschi.com"),
 };
 
-const RootLayout = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );
-}
+};
 
 export default RootLayout;

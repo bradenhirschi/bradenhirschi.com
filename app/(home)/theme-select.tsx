@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { BiPaint } from 'react-icons/bi';
-import { THEMES, Theme } from './themes';
+import { useEffect, useState } from "react";
+import { BiPaint } from "react-icons/bi";
+import { THEMES, Theme } from "./themes";
 
 const ThemeSelect = ({
   currentTheme,
@@ -18,20 +18,30 @@ const ThemeSelect = ({
   };
 
   const handleChangeTheme = (theme: Theme) => {
-    document.documentElement.style.setProperty('--text', theme.text);
-    document.documentElement.style.setProperty('--primary', theme.primary);
-    document.documentElement.style.setProperty('--secondary', theme.secondary);
-    document.documentElement.style.setProperty('--background-primary', theme.backgroundPrimary);
-    document.documentElement.style.setProperty('--background-secondary', theme.backgroundSecondary);
+    document.documentElement.style.setProperty("--text", theme.text);
+    document.documentElement.style.setProperty("--primary", theme.primary);
+    document.documentElement.style.setProperty("--secondary", theme.secondary);
+    document.documentElement.style.setProperty(
+      "--background-primary",
+      theme.backgroundPrimary
+    );
+    document.documentElement.style.setProperty(
+      "--background-secondary",
+      theme.backgroundSecondary
+    );
     setMenuOpen(false);
     setCurrentTheme(theme);
   };
 
   useEffect(() => {
-    document.addEventListener('games-opened', () => handleChangeTheme(THEMES.DOOM));
+    document.addEventListener("games-opened", () =>
+      handleChangeTheme(THEMES.DOOM)
+    );
 
     return () => {
-      document.removeEventListener('games-opened', () => handleChangeTheme(THEMES.DOOM));
+      document.removeEventListener("games-opened", () =>
+        handleChangeTheme(THEMES.DOOM)
+      );
     };
   });
 
@@ -53,10 +63,12 @@ const ThemeSelect = ({
                 return (
                   <button
                     key={theme.primary}
-                    className="rounded-full w-[40px] h-[40px] mt-2 flex items-center justify-center"
+                    className={`rounded-full w-[40px] h-[40px] mt-2 flex items-center justify-center`}
                     style={{
-                      backgroundColor: theme.primary,
-                      color: theme.backgroundPrimary,
+                      color: `rgb(${theme.backgroundPrimary.split(" ").join(",")})`,
+                      backgroundColor: `rgb(${theme.primary
+                        .split(" ")
+                        .join(",")})`,
                     }}
                     onClick={() => handleChangeTheme(theme)}
                   >
