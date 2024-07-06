@@ -39,11 +39,9 @@ const Hero = ({ theme }: { theme: any }) => {
           </h1>
         )}
 
-        <p className="text-lg">
-          I&apos;m a passionate full-stack software engineer with a knack for
-          creating dynamic digital experiences. I pride myself on my ability to
-          seamlessly integrate elegant front-end experiences with smooth and
-          robust back-end functionality. Keep scrolling to see some of my work!
+        <p className="text-xl">
+          I&apos;m a passionate full-stack software engineer and designer with a passion for
+          creating dynamic experiences - whether digitally or otherwise. Keep scrolling to see some of my work!
         </p>
         <div className="flex flex-row pt-6 gap-2 text-lg">
           <a

@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Games from "./games";
 import Code from "./code";
 import Work from "./work";
-import ThemeSelect from "./theme-select";
-import { THEMES } from "./themes";
+import ThemeSelect from "../../components/theme-select";
+import { THEMES } from "../themes";
 import Hero from "./hero";
 
 export default function Home() {

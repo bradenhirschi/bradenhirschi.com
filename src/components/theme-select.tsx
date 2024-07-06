@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { BiPaint } from "react-icons/bi";
-import { THEMES, Theme } from "./themes";
+import { THEMES, Theme } from "../app/themes";
 
 const ThemeSelect = ({
   currentTheme,

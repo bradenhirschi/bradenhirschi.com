@@ -1,33 +1,33 @@
 const codeLinks: { link: string; title: string; description: string }[] = [
   {
     link: "https://github.com/bradenhirschi/gd-styles",
-    title: "GD Styles",
+    title: "GD Styles 🖌️",
     description:
       "Chrome extension that converts any element's CSS styles to Tailwind classes",
   },
   {
     link: "https://github.com/bradenhirschi/bradenhirschi.com",
-    title: "bradenhirschi.com",
+    title: "bradenhirschi.com 💻",
     description:
-      "Open source code for this website! Built with Next.js and Typescript and styled with Tailwind and custom CSS",
+      "Open source code for this website! Built with Next.js and styled with Tailwind (and some custom CSS for the fun parts)",
   },
   {
     link: "https://github.com/bradenhirschi/instagram-bot",
-    title: "Instagram Bot",
+    title: "Instagram Bot 📷",
     description:
-      "Node.js bot using the Instagram private API to automatically create Instagram posts",
+      "Node.js script using the Instagram private API to automate posting on Instagram",
   },
   {
     link: "https://github.com/bradenhirschi/fire-daily-bot",
-    title: "Fire Daily Bot",
+    title: "Fire Daily Bot 📝",
     description:
-      "Node.js bot that uses the ChatGPT API to write daily news articles for my news website FireDailyNews.com",
+      "Node.js script that uses the OpenAI ChatGPT API to write daily news articles for my news website FireDailyNews.com",
   },
   {
     link: "https://github.com/bradenhirschi/suite-for-spotify",
-    title: "Suite for Spotify",
+    title: "Suite for Spotify 🎧",
     description:
-      "Android app letting users view their Spotify stats. Built with Kotlin, Jetpack Compose, and Material 3 Design",
+      "Android app letting users view their Spotify listening stats. Built with Kotlin, Jetpack Compose, and Material 3 Design",
   },
 ];
 
@@ -67,7 +67,7 @@ const Code = ({ theme }: { theme: any }) => {
               className="code-card"
             >
               <h4 className="card-title">{codeLink.title}</h4>
-              <p className="text-sm font-light">{codeLink.description}</p>
+              <p className="text-sm font-light z-[1000]">{codeLink.description}</p>
               <div className="shine" />
               <div className="background">
                 <div className="tiles">
