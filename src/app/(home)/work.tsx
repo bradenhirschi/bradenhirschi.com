@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import amyHirschiCoaching from "../../public/amy-hirschi-coaching.png";
-import jacobHughesMusic from "../../public/jacob-hughes-music.png";
-import gdStyles from "../../public/gd-styles.png";
-import kbhCreative from "../../public/kbh-creative.png";
-import fireDaily from "../../public/fire-daily.png";
-import vstServices from "../../public/vst-services.png";
+import amyHirschiCoaching from "@/public/amy-hirschi-coaching.png";
+import jacobHughesMusic from "@/public/jacob-hughes-music.png"
+import gdStyles from "@/public/gd-styles.png";
+import kbhCreative from "@/public/kbh-creative.png";
+import fireDaily from "@/public/fire-daily.png";
+import vstServices from "@/public/vst-services.png";
 
 const Work = () => {
   return (

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import headshot from "../../public/headshot.webp";
+import headshot from "@/public/headshot.webp";
 import localFont from "next/font/local";
 
-const doomLeftFont = localFont({ src: "../../public/AmazDooMLeft.ttf" });
-const doomRightFont = localFont({ src: "../../public/AmazDooMRight.ttf" });
+const doomLeftFont = localFont({ src: "../../../public/AmazDooMLeft.ttf" });
+const doomRightFont = localFont({ src: "../../../public/AmazDooMRight.ttf" });
 
 const Hero = ({ theme }: { theme: any }) => {
   return (
