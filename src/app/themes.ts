@@ -5,6 +5,7 @@ export interface Theme {
   secondary: string;
   backgroundPrimary: string;
   backgroundSecondary: string;
+  backgroundImage?: string;
 }
 
 export const THEMES: { [key: string]: Theme } = {
@@ -48,6 +49,23 @@ export const THEMES: { [key: string]: Theme } = {
     backgroundPrimary: "255 247 237",
     backgroundSecondary: "255 237 213",
   },
+  // DOCTOR_JOHN: {
+  //   name: "doctor-john",
+  //   text: "255 255 255",
+  //   primary: "252 236 118",
+  //   secondary: "246 119 87",
+  //   backgroundPrimary: "10 2 12",
+  //   backgroundSecondary: "127 54 99",
+  //   backgroundImage: "https://www.transparenttextures.com/patterns/snow.png"
+  // },
+  PEOPLE_UNDER_THE_STAIRS: {
+    name: "people-under-the-stairs",
+    text: "253 253 215",
+    primary: "148 148 116",
+    secondary: "0 0 0",
+    backgroundPrimary: "114 139 2",
+    backgroundSecondary: "148 148 116",
+  },
   DOOM: {
     name: "doom-mode",
     text: "255 255 255",
@@ -55,5 +73,6 @@ export const THEMES: { [key: string]: Theme } = {
     secondary: "170 170 170",
     backgroundPrimary: "0 0 0",
     backgroundSecondary: "17 17 17",
+    backgroundImage: "https://www.transparenttextures.com/patterns/hexellence.png"
   },
 };

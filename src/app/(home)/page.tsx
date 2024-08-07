@@ -1,16 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Games from "./games";
 import Code from "./code";
 import Work from "./work";
-import ThemeSelect from "../../components/theme-select";
-import { THEMES } from "../themes";
+import ThemeSelect from "./theme-select";
 import Hero from "./hero";
 
 export default function Home() {
-  const [currentTheme, setCurrentTheme] = useState(THEMES.GRAY_BLUE);
-
   const makeKeySequenceListener = (keySequence: any, callback: () => void) => {
     let keys = "";
 
@@ -45,13 +42,10 @@ export default function Home() {
   return (
     <main className="flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory">
       <Games />
-      <Hero theme={currentTheme} />
+      <Hero />
       <Work />
-      <Code theme={currentTheme} />
-      <ThemeSelect
-        currentTheme={currentTheme}
-        setCurrentTheme={setCurrentTheme}
-      />
+      <Code />
+      <ThemeSelect />
     </main>
   );
 }

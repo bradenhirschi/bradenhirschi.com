@@ -1,13 +1,19 @@
 import Image from "next/image";
 import headshot from "@/public/headshot.webp";
-import localFont from "next/font/local";
+import { useTheme } from "../theme-context";
+import NameText from "./name-text";
 
-const doomLeftFont = localFont({ src: "../../../public/AmazDooMLeft.ttf" });
-const doomRightFont = localFont({ src: "../../../public/AmazDooMRight.ttf" });
+const Hero = () => {
+  const { theme } = useTheme();
 
-const Hero = ({ theme }: { theme: any }) => {
   return (
-    <section className="h-screen min-h-screen snap-start px-4 md:px-16 lg:px-40 py-8 flex flex-col lg:flex-row items-center justify-center lg:gap-16">
+    <section
+      className="h-screen min-h-screen snap-start px-4 md:px-16 lg:px-40 py-8 flex flex-col lg:flex-row items-center justify-center lg:gap-16"
+      style={{
+        backgroundImage:
+          theme.backgroundImage && `url("${theme.backgroundImage}")`,
+      }}
+    >
       {/* Left side w/ picture */}
       <div className="relative m-2 md:m-s8">
         <Image
@@ -22,26 +28,11 @@ const Hero = ({ theme }: { theme: any }) => {
       {/* Right side w/ words */}
       <div>
         <h3 className="text-secondary text-xl">Hello! My name is</h3>
-
-        {theme.name === "doom-mode" ? (
-          <div className="text-[100px]">
-            <span className={doomLeftFont.className + " uppercase"}>
-              Braden
-            </span>
-            <span className={doomRightFont.className + " uppercase"}>
-              &nbsp;Hirschi
-            </span>
-          </div>
-        ) : (
-          <h1 className="pb-4 flex-row">
-            Braden
-            <span className="text-primary font-serif">&nbsp;Hirschi</span>
-          </h1>
-        )}
-
+        <NameText />
         <p className="text-xl">
-          I&apos;m a passionate full-stack software engineer and designer with a passion for
-          creating dynamic experiences - whether digitally or otherwise. Keep scrolling to see some of my work!
+          I&apos;m a passionate full-stack software engineer and designer with a
+          passion for creating dynamic experiences - whether digitally or
+          otherwise. Keep scrolling to see some of my work!
         </p>
         <div className="flex flex-row pt-6 gap-2 text-lg">
           <a

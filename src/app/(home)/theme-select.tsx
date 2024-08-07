@@ -2,15 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { BiPaint } from "react-icons/bi";
-import { THEMES, Theme } from "../app/themes";
+import { THEMES, Theme } from "../themes";
+import { useTheme } from "../theme-context";
 
-const ThemeSelect = ({
-  currentTheme,
-  setCurrentTheme,
-}: {
-  currentTheme: Theme;
-  setCurrentTheme: any;
-}) => {
+const ThemeSelect = () => {
+  const { theme: currentTheme, setTheme: setCurrentTheme } = useTheme();
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenuOpen = () => {
@@ -65,7 +62,9 @@ const ThemeSelect = ({
                     key={theme.primary}
                     className={`rounded-full w-[40px] h-[40px] mt-2 flex items-center justify-center`}
                     style={{
-                      color: `rgb(${theme.backgroundPrimary.split(" ").join(",")})`,
+                      color: `rgb(${theme.backgroundPrimary
+                        .split(" ")
+                        .join(",")})`,
                       backgroundColor: `rgb(${theme.primary
                         .split(" ")
                         .join(",")})`,

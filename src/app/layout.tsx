@@ -1,4 +1,5 @@
 import "./globals.css";
+import { ThemeProvider } from "./theme-context";
 
 export const metadata = {
   title: "Braden Hirschi",
@@ -10,7 +11,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body>
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

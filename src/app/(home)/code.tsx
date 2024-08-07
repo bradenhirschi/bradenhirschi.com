@@ -1,3 +1,6 @@
+import { useTheme } from "../theme-context";
+import { rgbToHex } from "@/src/utils/rgb-to-hex";
+
 const codeLinks: { link: string; title: string; description: string }[] = [
   {
     link: "https://github.com/bradenhirschi/gd-styles",
@@ -31,20 +34,9 @@ const codeLinks: { link: string; title: string; description: string }[] = [
   },
 ];
 
-const Code = ({ theme }: { theme: any }) => {
-  let chartColor;
-
-  if (theme && theme.primary) {
-    const rgbArray = theme.primary.split(" ");
-
-    const r = parseInt(rgbArray[0], 10).toString(16).padStart(2, "0");
-    const g = parseInt(rgbArray[1], 10).toString(16).padStart(2, "0");
-    const b = parseInt(rgbArray[2], 10).toString(16).padStart(2, "0");
-
-    chartColor = `${r}${g}${b}`;
-  } else {
-    chartColor = "3B82F6";
-  }
+const Code = () => {
+  const { theme } = useTheme();
+  const chartColor = rgbToHex(theme.primary);
 
   return (
     <section className="h-screen min-h-screen snap-center flex flex-col px-4 py-8 md:px-8 lg:px-24 xl:px-32 items-center justify-center">
@@ -67,7 +59,9 @@ const Code = ({ theme }: { theme: any }) => {
               className="code-card"
             >
               <h4 className="card-title">{codeLink.title}</h4>
-              <p className="text-sm font-light z-[1000]">{codeLink.description}</p>
+              <p className="text-sm font-light z-[1000]">
+                {codeLink.description}
+              </p>
               <div className="shine" />
               <div className="background">
                 <div className="tiles">
