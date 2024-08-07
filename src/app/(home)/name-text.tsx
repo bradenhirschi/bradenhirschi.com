@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import { useTheme } from "../theme-context";
 
 const peopleUnderTheStairsFont = localFont({
-  src: "../../../public/smartSansBold.otf",
+  src: "../../../public/SmartSansBold.otf",
 });
 const doomLeftFont = localFont({ src: "../../../public/AmazDooMLeft.ttf" });
 const doomRightFont = localFont({ src: "../../../public/AmazDooMRight.ttf" });
