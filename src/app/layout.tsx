@@ -9,10 +9,15 @@ export const metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
+      <script
+        defer
+        data-project="66b664e5507bcfb0999b3df6"
+        src="https://cdn.jsdelivr.net/gh/litlyx/litlyx-js/browser/litlyx.js"
+      ></script>
     </html>
   );
 };
