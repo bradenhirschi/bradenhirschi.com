@@ -1,0 +1,51 @@
+{
+  "name": "My Example Source",
+  "subtitle": "All my apps in one place.",
+  "description": "Welcome to my source! Here you'll find all of my apps.",
+  "iconURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/OctoSource.png",
+  "headerURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/OceanHeader.png",
+  "website": "https://example.com",
+  "tintColor": "#4185A9",
+  "featuredApps": [],
+  "apps": [
+    {
+      "name": "NBA Jam",
+      "bundleIdentifier": "com.bradenhirschi.nbajam",
+      "developerName": "Example Developer",
+      "subtitle": "An awesome app.",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/FishApp.png",
+      "tintColor": "#5CA399",
+      "screenshots": [
+        "https://example.com/myapp_portrait_screenshot1.png",
+        "https://example.com/myapp_portrait_screenshot2.png",
+        {
+          "imageURL": "https://example.com/myapp_landscape_screenshot.png",
+          "width": 2556,
+          "height": 1179
+        }
+      ],
+      "versions": [
+        {
+          "version": "1.72",
+          "date": "2022-05-01T09:00:00-08:00",
+          "size": 20000000,
+          "downloadURL": "https://archive.org/download/nba-jam-by-ea-sportstm-for-ipad-ipa-collection/NBA%20JAM%201.1.72.ipa",
+          "localizedDescription": "New features and bug fixes.",
+          "minOSVersion": "12.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups",
+          "com.apple.developer.siri"
+        ],
+        "privacy": {
+          "NSPhotoLibraryUsageDescription": "App saves photos to your Photo Library.",
+          "NSCameraUsageDescription": "App uses camera to take photos.",
+          "NSMicrophoneUsageDescription": "App uses microphone to record video."
+        }
+      }
+    }
+  ]
+}
