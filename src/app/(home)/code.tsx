@@ -40,7 +40,7 @@ const Code = () => {
 
   return (
     <section className="h-screen min-h-screen snap-center flex flex-col px-4 py-8 md:px-8 lg:px-24 xl:px-32 items-center justify-center">
-      <h1 className="pb-4">My Code</h1>
+      <h2 className="pb-4">My Code</h2>
       <a href="https://github.com/bradenhirschi">
         <img
           src={`https://ghchart.rshah.org/${chartColor}/bradenhirschi`}

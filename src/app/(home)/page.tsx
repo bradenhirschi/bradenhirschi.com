@@ -5,7 +5,7 @@ import Games from "./games";
 import Code from "./code";
 import Work from "./work";
 import ThemeSelect from "./theme-select";
-import Hero from "./hero";
+import Hero from "./hero-section";
 
 export default function Home() {
   const makeKeySequenceListener = (keySequence: any, callback: () => void) => {

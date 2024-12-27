@@ -3,7 +3,7 @@ import headshot from "@/public/headshot.webp";
 import { useTheme } from "../theme-context";
 import NameText from "./name-text";
 
-const Hero = () => {
+export default function HeroSection() {
   const { theme } = useTheme();
 
   return (
@@ -51,6 +51,4 @@ const Hero = () => {
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

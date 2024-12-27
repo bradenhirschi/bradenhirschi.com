@@ -7,7 +7,7 @@ const peopleUnderTheStairsFont = localFont({
 const doomLeftFont = localFont({ src: "../../../public/AmazDooMLeft.ttf" });
 const doomRightFont = localFont({ src: "../../../public/AmazDooMRight.ttf" });
 
-const NameText = () => {
+export default function NameText() {
   const { theme } = useTheme();
 
   switch (theme.name) {
@@ -40,6 +40,4 @@ const NameText = () => {
         </h1>
       );
   }
-};
-
-export default NameText;
+}
